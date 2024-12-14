@@ -10,9 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const hamburger = document.querySelector('.hamburger');
+
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('change');
+        }
+
+    </script>
 </head>
 
 <body>
+    </div>
     <div class="bg-image">
         <nav class="navbar-container">
             <div class="navbar">
@@ -27,6 +38,13 @@
                     <button class="quote-1">Free quote</button>
                     <button class="contact-us">Contact us</button>
                 </div>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
             </div>
         </nav>
         <div class="family-container">
@@ -71,7 +89,7 @@
                     <h2><span class="highlight">Protect</span> your loved ones</h2>
                     <p>Ensure your loved ones' future security with our <br> personalized life insurance policies.</p>
                     <button>Learn more</button>
-                    <img src="image/finpath-insurance-2.jpg" alt="Family protection">
+                    <img src="image/finpath-insurance-2.jpg">
                 </div>
             </div>
             <div class="card-container">
@@ -80,7 +98,7 @@
                     <p>Safeguard your child's future with insurance plans<br> designed to offer protection and support.
                     </p>
                     <button>Learn more</button>
-                    <img src="image/finpath-insurance-3.jpg" alt="Health coverage">
+                    <img src="image/finpath-insurance-3.jpg">
                 </div>
                 <div class="card">
                     <h2><span class="highlight">Safeguard</span> your business with <br> tailored insurance solutions
@@ -89,7 +107,7 @@
                         amidst ever-evolving challenges.
                     </p>
                     <button>Learn more</button>
-                    <img src="image/finpath-insurance-4.jpg" alt="Family protection">
+                    <img src="image/finpath-insurance-4.jpg">
                 </div>
             </div>
         </div>
@@ -108,7 +126,7 @@
             <div class="features-section">
                 <div class="feature-card">
                     <div class="icon-wrapper">
-                        <img src="image/finpath-icon-1.png" alt="Expert guidance icon" class="feature-icon">
+                        <img src="image/finpath-icon-1.png">
                     </div>
                     <h3>Expert guidance</h3>
                     <p>Benefit from seasoned advice, <br> ensuring informed decisions for <br> optimal insurance
@@ -117,7 +135,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="icon-wrapper">
-                        <img src="image/finpath-icon-5.png" alt="Personalized service icon" class="feature-icon">
+                        <img src="image/finpath-icon-5.png">
                     </div>
                     <h3>Personalized service</h3>
                     <p>Tailored services matching your <br> unique needs for a seamless <br> insurance experience.</p>
@@ -125,7 +143,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="icon-wrapper">
-                        <img src="image/finpath-icon-10.png" alt="Dedicated support icon" class="feature-icon">
+                        <img src="image/finpath-icon-10.png">
                     </div>
                     <h3>Dedicated support</h3>
                     <p>Receive unwavering assistance <br> throughout, guaranteeing your <br> peace of mind and
@@ -148,8 +166,8 @@
                         <h4>Pick a plan</h4>
                         <span>STEP 1</span>
                     </div>
-                    <p>Go through the summaries for each of your options, taking note of which ones check the boxes of
-                        your needs.</p>
+                    <p>Go through the summaries for each <br> of your options, taking note of which <br> ones check the
+                        boxe.</p>
                 </div>
                 <div class="arrow">&#8594;</div>
                 <div class="step">
@@ -157,7 +175,7 @@
                         <h4>Compare quotes</h4>
                         <span>STEP 2</span>
                     </div>
-                    <p>Your insurance discounts are calculated automatically, so see how much you can save today.</p>
+                    <p>Your insurance discounts <br> are calculated automatically.</p>
                 </div>
                 <div class="arrow">&#8594;</div>
                 <div class="step">
@@ -166,7 +184,8 @@
                         <span>STEP 3</span>
                     </div>
 
-                    <p>After choosing the most suitable insurance plan, proceed with the enrollment process.</p>
+                    <p>After choosing the most suitable <br> insurance plan, proceed with the <br> enrollment process.
+                    </p>
                 </div>
             </div>
 
@@ -187,17 +206,18 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="main-home">
             <div class="home-container">
                 <div class="home-header">
+                    <img src="image/finpath-insurance-7.jpg" alt="Happy Family" class="main-image">
                     <div class="quote-box">
                         <div class="quote">
                             <p>"I feel confident about the future knowing that our family is in capable hands."</p>
                             <span>- Stefan Ball</span>
                         </div>
                     </div>
-                    <img src="image/finpath-insurance-7.jpg" alt="Happy Family" class="main-image">
+
                 </div>
 
                 <div class="home-content">
@@ -308,7 +328,7 @@
                             <input type="text" placeholder="Name" required>
                             <input type="email" placeholder="Email" required>
                         </div>
-                        <textarea placeholder="Message" required></textarea>
+                        <textarea placeholder="Message"></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
@@ -357,8 +377,8 @@
                     <div class="column">
                         <h4>Business hours</h4>
                         <ul>
-                            <li>Weekdays: <span>09.00 AM – 21.00 PM</span></li>
-                            <li>Saturday: <span>09.00 AM – 18.00 PM</span></li>
+                            <li>Weekdays: <span>09.00 AM - 21.00 PM</span></li>
+                            <li>Saturday: <span>09.00 AM - 18.00 PM</span></li>
                             <li>Sunday: <span>Closed</span></li>
                         </ul>
                     </div>
